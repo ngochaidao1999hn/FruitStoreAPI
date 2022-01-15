@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FruitStore.Core\FruitStore.Core.csproj" />
+    <ProjectReference Include="..\FruitStore.DAL\FruitStore.DAL.csproj" />
+    <ProjectReference Include="..\FruitStore.DTOS\FruitStore.DTOS.csproj" />
+  </ItemGroup>
+
+</Project>
