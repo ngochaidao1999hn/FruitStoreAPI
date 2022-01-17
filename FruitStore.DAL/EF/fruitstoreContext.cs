@@ -126,12 +126,13 @@ namespace FruitStore.DAL.EF
 
                 entity.Property(e => e.Descrip)
                     .HasColumnName("descrip")
-                    .HasMaxLength(200);
+                    .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
 
                 entity.Property(e => e.FruitName)
                     .HasColumnName("fruit_name")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                    .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
 
                 entity.Property(e => e.IdCate).HasColumnName("id_cate");
 
@@ -141,8 +142,8 @@ namespace FruitStore.DAL.EF
 
                 entity.Property(e => e.Img)
                     .HasColumnName("img")
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
+                    .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
 
                 entity.Property(e => e.ImpDate)
                     .HasColumnName("imp_date")
