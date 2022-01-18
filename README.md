@@ -1,3 +1,4 @@
 # FruitStoreAPI
-.net CORE 3.1
-Change Connection string in appsetting.json(FruitStore.API)
+.net CORE 3.1</br>
+Change Connection string in appsetting.json(FruitStore.API)</br>
+run the fruitstore.sql to get database</br>
