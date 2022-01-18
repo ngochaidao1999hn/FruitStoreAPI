@@ -147,7 +147,7 @@ namespace FruitStore.API.Controllers
             {
                 await file.CopyToAsync(stream);
             }
-            return path;
+            return "Images/"+fName;
         }
     }
 }
