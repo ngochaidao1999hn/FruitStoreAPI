@@ -7,7 +7,6 @@ namespace FruitStore.DTOS.ProductDTOs
 {
     public class UpdateDTO
     {
-        public int Id { get; set; }
         public string FruitName { get; set; }
         public double? Price { get; set; }
         public string Descrip { get; set; }
