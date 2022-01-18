@@ -59,7 +59,7 @@ namespace FruitStore.API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseCors(MyAllowSpecificOrigins);
             app.UseAuthorization();
