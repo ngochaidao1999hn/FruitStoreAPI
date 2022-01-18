@@ -47,7 +47,8 @@ namespace FruitStore.API
             services.AddTransient<ICustomerBusiness, CustomerBusiness>();
             services.AddTransient<IOrderBusiness, OrderBusiness>();
             services.AddTransient<IProductBusiness, ProductBusiness>();
-            services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo { Title = "fruitstore.Api", Version = "v1" }));
+
+            services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo { Title = "fruitstore.Api", Version = "v1" })) ;
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
