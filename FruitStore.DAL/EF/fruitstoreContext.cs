@@ -1,3 +1,4 @@
+
 ﻿using System;
 using FruitStore.DAL.Models;
 using Microsoft.EntityFrameworkCore;
@@ -231,3 +232,4 @@ namespace FruitStore.DAL.EF
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
+
