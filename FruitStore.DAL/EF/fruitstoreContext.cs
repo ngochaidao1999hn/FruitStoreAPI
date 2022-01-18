@@ -93,7 +93,8 @@ namespace FruitStore.DAL.EF
 
                 entity.Property(e => e.Content)
                     .HasColumnName("content")
-                    .HasMaxLength(50);
+                    .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
             });
 
             modelBuilder.Entity<Customer>(entity =>
@@ -104,8 +105,8 @@ namespace FruitStore.DAL.EF
 
                 entity.Property(e => e.Addr)
                     .HasColumnName("addr")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                    .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
 
                 entity.Property(e => e.Phonenumber)
                     .HasColumnName("phonenumber")
@@ -179,7 +180,8 @@ namespace FruitStore.DAL.EF
 
                 entity.Property(e => e.Content)
                     .HasColumnName("content")
-                    .HasMaxLength(500);
+                   .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
             });
 
             modelBuilder.Entity<Origin>(entity =>
@@ -190,7 +192,8 @@ namespace FruitStore.DAL.EF
 
                 entity.Property(e => e.Content)
                     .HasColumnName("content")
-                    .HasMaxLength(50);
+                   .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
             });
 
             modelBuilder.Entity<Unit>(entity =>
@@ -201,7 +204,8 @@ namespace FruitStore.DAL.EF
 
                 entity.Property(e => e.Content)
                     .HasColumnName("content")
-                    .HasMaxLength(50);
+                    .HasColumnType("nvarchar(max)")
+                    .IsUnicode(true);
             });
 
             modelBuilder.Entity<Users>(entity =>
